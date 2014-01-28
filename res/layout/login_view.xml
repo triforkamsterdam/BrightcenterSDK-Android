@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/login_background"
+              android:layout_gravity="center"
+              android:gravity="center_vertical"
+        >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_label"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            />
+    <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:text="test@test.com"
+            android:id="@+id/etUsername" android:layout_gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingLeft="20dp"
+            android:hint="@string/login_username_highlight"
+            android:drawableLeft="@drawable/login_usericon_selector"
+            android:drawablePadding="20dp"/>
+    <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:text="test"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tvPassword"
+            android:id="@+id/etPassword" android:layout_gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingLeft="20dp"
+            android:inputType="textPassword"
+            android:hint="@string/login_password_highlight"
+            android:drawableLeft="@drawable/login_passwordicon_selector"
+            android:drawablePadding="20dp"/>
+    <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:text="@string/login_button"
+            android:textSize="30dp"
+            android:textColor="@drawable/rounded_loginbutton_textcolor"
+            android:id="@+id/bLogin" android:layout_gravity="center"
+            android:background="@drawable/rounded_loginbutton_selector"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+            >
+        <ProgressBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pbLogin"/>
+    </LinearLayout>
+
+</LinearLayout>
+
