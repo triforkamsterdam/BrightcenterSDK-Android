@@ -1,4 +1,4 @@
-package com.example.android.fragments;
+package com.trifork.android.sdk;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,13 +13,13 @@ import java.util.List;
 /**
  * @author Rick Slot
  */
-public class CustomGroupAdapter extends ArrayAdapter<String>{
+public class CustomStudentAdapter extends ArrayAdapter<String> {
 
     Context context;
     int resource;
     List<String> objects = null;
 
-    public CustomGroupAdapter(Context context, int resource, List<String> objects) {
+    public CustomStudentAdapter(Context context, int resource, List<String> objects) {
         super(context, resource, objects);
         this.context = context;
         this.resource = resource;
@@ -34,10 +34,12 @@ public class CustomGroupAdapter extends ArrayAdapter<String>{
         {
             LayoutInflater inflater = ((Activity)context).getLayoutInflater();
             row = inflater.inflate(resource, parent, false);
+
+
         }
-        String groupName = objects.get(position);
-        TextView tvGroupId = (TextView) row.findViewById(R.id.group_name);
-        tvGroupId.setText(groupName);
+        String studentName = objects.get(position);
+        TextView tvGroupId = (TextView) row.findViewById(R.id.tvStudenName);
+        tvGroupId.setText(studentName);
 
         return row;
     }

@@ -1,9 +1,9 @@
-package com.example.android.fragments;
+package com.trifork.android.sdk;
 
 import android.app.Application;
-import com.example.android.fragments.model.BCGroup;
-import com.example.android.fragments.model.BCStudent;
-import com.example.android.fragments.model.BCUser;
+import com.trifork.android.sdk.model.BCGroup;
+import com.trifork.android.sdk.model.BCStudent;
+import com.trifork.android.sdk.model.BCUser;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,22 +1,19 @@
-package com.example.android.fragments.activities;
+package com.trifork.android.sdk.activities;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.*;
 import android.widget.*;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
-import com.example.android.fragments.GlobalVars;
-import com.example.android.fragments.MainActivity;
-import com.example.android.fragments.R;
-import com.example.android.fragments.model.BCGroup;
-import com.example.android.fragments.model.BCUser;
-import com.example.android.fragments.rest.BCConnect;
+import com.trifork.android.sdk.GlobalVars;
+import com.trifork.android.sdk.MainActivity;
+import com.trifork.android.sdk.R;
+import com.trifork.android.sdk.model.BCGroup;
+import com.trifork.android.sdk.model.BCUser;
+import com.trifork.android.sdk.rest.BCConnect;
 
 import java.util.List;
 

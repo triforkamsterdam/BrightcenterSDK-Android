@@ -1,6 +1,6 @@
-package com.example.android.fragments.model;
+package com.trifork.android.sdk.model;
 
-import com.example.android.fragments.enums.CompletionStatus;
+import com.trifork.android.sdk.enums.CompletionStatus;
 
 import java.util.Date;
 

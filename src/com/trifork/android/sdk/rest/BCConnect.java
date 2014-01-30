@@ -1,11 +1,11 @@
-package com.example.android.fragments.rest;
+package com.trifork.android.sdk.rest;
 
 import android.util.Log;
-import com.example.android.fragments.enums.CompletionStatus;
-import com.example.android.fragments.model.BCGroup;
-import com.example.android.fragments.model.BCResult;
-import com.example.android.fragments.model.BCStudent;
-import com.example.android.fragments.model.BCUser;
+import com.trifork.android.sdk.enums.CompletionStatus;
+import com.trifork.android.sdk.model.BCGroup;
+import com.trifork.android.sdk.model.BCResult;
+import com.trifork.android.sdk.model.BCStudent;
+import com.trifork.android.sdk.model.BCUser;
 import org.apache.http.HttpResponse;
 import org.apache.http.auth.UsernamePasswordCredentials;
 import org.apache.http.client.HttpClient;

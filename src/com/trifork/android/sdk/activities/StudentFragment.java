@@ -1,24 +1,20 @@
-package com.example.android.fragments.activities;
+package com.trifork.android.sdk.activities;
 
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.GradientDrawable;
-import android.graphics.drawable.ShapeDrawable;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import com.example.android.fragments.CustomStudentAdapter;
-import com.example.android.fragments.GlobalVars;
-import com.example.android.fragments.R;
-import com.example.android.fragments.model.BCGroup;
-import com.example.android.fragments.model.BCStudent;
-import com.example.android.fragments.rest.BCConnect;
+import com.trifork.android.sdk.CustomStudentAdapter;
+import com.trifork.android.sdk.GlobalVars;
+import com.trifork.android.sdk.R;
+import com.trifork.android.sdk.model.BCGroup;
+import com.trifork.android.sdk.model.BCStudent;
 
 import java.util.ArrayList;
 import java.util.List;

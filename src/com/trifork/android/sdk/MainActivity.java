@@ -13,24 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.fragments;
+package com.trifork.android.sdk;
 
-import android.graphics.Color;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.PictureDrawable;
-import android.graphics.drawable.ShapeDrawable;
 import android.os.Bundle;
 
 
-import android.widget.ImageView;
 import android.widget.TextView;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-import com.example.android.fragments.activities.GroupFragment;
+import com.trifork.android.sdk.activities.GroupFragment;
 
 
 public class MainActivity extends SherlockFragmentActivity {

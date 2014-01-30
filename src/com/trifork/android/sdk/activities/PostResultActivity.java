@@ -1,15 +1,15 @@
-package com.example.android.fragments.activities;
+package com.trifork.android.sdk.activities;
 
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import com.example.android.fragments.GlobalVars;
-import com.example.android.fragments.R;
-import com.example.android.fragments.enums.CompletionStatus;
-import com.example.android.fragments.model.BCResult;
-import com.example.android.fragments.rest.BCConnect;
+import com.trifork.android.sdk.GlobalVars;
+import com.trifork.android.sdk.R;
+import com.trifork.android.sdk.enums.CompletionStatus;
+import com.trifork.android.sdk.model.BCResult;
+import com.trifork.android.sdk.rest.BCConnect;
 
 /**
  * @author Rick Slot

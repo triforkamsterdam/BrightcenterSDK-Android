@@ -1,4 +1,4 @@
-package com.example.android.fragments.enums;
+package com.trifork.android.sdk.enums;
 
 /**
  * @author Rick Slot

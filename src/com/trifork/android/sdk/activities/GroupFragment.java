@@ -1,14 +1,14 @@
-package com.example.android.fragments.activities;
+package com.trifork.android.sdk.activities;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.widget.ListView;
-import com.example.android.fragments.CustomGroupAdapter;
-import com.example.android.fragments.GlobalVars;
-import com.example.android.fragments.R;
-import com.example.android.fragments.model.BCGroup;
+import com.trifork.android.sdk.CustomGroupAdapter;
+import com.trifork.android.sdk.GlobalVars;
+import com.trifork.android.sdk.R;
+import com.trifork.android.sdk.model.BCGroup;
 
 import java.util.ArrayList;
 import java.util.List;

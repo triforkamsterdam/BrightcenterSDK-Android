@@ -1,4 +1,4 @@
-package com.example.android.fragments.model;
+package com.trifork.android.sdk.model;
 
 import java.util.ArrayList;
 import java.util.List;
