@@ -24,7 +24,10 @@ You alsno need to add the following thins to your AndroidManifest.xml:
 
 <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 ```
-
+add the folowing to your '<application>' tag to use the globalvars:
+```xml
+android:name="nl.trifork.brightcenter.androidsdk.GlobalVars"
+```
 
 To start the Brightcenter SDK use the following piece of code wherever you want to start the login sequence:
 ```java
