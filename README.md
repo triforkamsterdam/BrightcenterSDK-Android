@@ -1,7 +1,15 @@
-BrightcenterSDK-Android
-=======================
+ActionBarSherlock Library
+=========================
 
-In this repo you'll find the PHP-SDK for Brightcenter. In this file I'll describe how you can use the SDK.
+This folder contains the main library which should be linked against as an
+Android library project in your application.
 
-###Download the project
-First of all you need to download the project. You can either check it out with git or download the zip.
+For more information see the "Including In Your Project" section of the
+[usage page][1].
+
+
+
+
+
+
+ [1]: http://actionbarsherlock.com/usage.html

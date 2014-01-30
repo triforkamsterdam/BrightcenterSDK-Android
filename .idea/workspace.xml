@@ -1,11 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidDesignerProfile">
+    <option name="fullProfile">
+      <profile>
+        <option name="device" value="2.7in QVGA" />
+        <option name="deviceConfiguration" value="Portrait" />
+        <option name="localeLanguage" value="nl" />
+        <option name="targetHashString" value="android-19" />
+        <option name="theme" value="CustomTheme" />
+      </profile>
+    </option>
+    <option name="selection" value="[Full]" />
+  </component>
+  <component name="AndroidLayoutPreviewToolWindow">
+    <option name="state">
+      <GlobalState>
+        <option name="device" value="2.7in QVGA" />
+        <option name="dockMode" value="" />
+        <option name="nightMode" value="notnight" />
+        <option name="targetHashString" value="android-19" />
+        <option name="theme" value="CustomTheme" />
+      </GlobalState>
+    </option>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa76968-94a2-4966-be5e-215342ca6784" name="Default" comment="" />
     <ignored path="BrightcenterSDK-Android.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/res/layout/main.xml" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391087675096" ignored="false" />
     <file path="/fragment.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391088063312" ignored="false" />
+    <file path="$PROJECT_DIR$/../MybrightcenterAppTest/gen/com/example/MybrightcenterAppTest/Manifest.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391089268717" ignored="false" />
+    <file path="$PROJECT_DIR$/../MybrightcenterAppTest/gen/com/example/MybrightcenterAppTest/R.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391089268717" ignored="false" />
+    <file path="$PROJECT_DIR$/../MybrightcenterAppTest/.idea/workspace.xml" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090192919" ignored="false" />
+    <file path="$PROJECT_DIR$/../MybrightcenterAppTest/project.properties" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391088791954" ignored="false" />
+    <file path="$PROJECT_DIR$/../MybrightcenterAppTest/gen/com/example/MybrightcenterAppTest/BuildConfig.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391089330272" ignored="false" />
+    <file path="/Dummy.txt" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391088776673" ignored="false" />
+    <file path="$PROJECT_DIR$/../MybrightcenterAppTest/src/com/example/MybrightcenterAppTest/FirstActivity.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391088791954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/nl/trifork/brightcenter/androidsdk/activities/StudentFragment.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
+    <file path="$PROJECT_DIR$/src/nl/trifork/brightcenter/androidsdk/activities/LoginActivity.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
+    <file path="$PROJECT_DIR$/src/nl/trifork/brightcenter/androidsdk/activities/GroupFragment.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090014861" ignored="false" />
+    <file path="$PROJECT_DIR$/../MybrightcenterAppTest/AndroidManifest.xml" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391089266959" ignored="false" />
+    <file path="/a.dummy" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391089756626" ignored="false" />
+    <file path="$PROJECT_DIR$/res/layout/news_articles.xml" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
+    <file path="/news_articles.xml" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391089794404" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/nl/trifork/brightcenter/androidsdk/R.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
+    <file path="$PROJECT_DIR$/src/nl/trifork/brightcenter/androidsdk/model/BCUser.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
+    <file path="$PROJECT_DIR$/src/nl/trifork/brightcenter/androidsdk/model/BCGroup.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
+    <file path="$PROJECT_DIR$/src/nl/trifork/brightcenter/androidsdk/GlobalVars.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
+    <file path="$PROJECT_DIR$/src/nl/trifork/brightcenter/androidsdk/MainActivity.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
+    <file path="$PROJECT_DIR$/src/nl/trifork/brightcenter/androidsdk/CustomStudentAdapter.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
+    <file path="$PROJECT_DIR$/src/nl/trifork/brightcenter/androidsdk/CustomGroupAdapter.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
+    <file path="$PROJECT_DIR$/src/nl/trifork/brightcenter/androidsdk/activities/PostResultActivity.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
+    <file path="$PROJECT_DIR$/src/nl/trifork/brightcenter/androidsdk/model/BCStudent.java" changelist="ffa76968-94a2-4966-be5e-215342ca6784" time="1391090529739" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +116,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="102" selection-start="847" selection-end="847" vertical-scroll-proportion="0.3167421">
+            <state line="5" column="19" selection-start="253" selection-end="253" vertical-scroll-proportion="0.10107817">
               <folding />
             </state>
           </provider>
@@ -86,6 +133,42 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="GroupFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/activities/GroupFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#607#616#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_layout.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/res/layout/fragment_layout.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news_articles.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/res/layout/news_articles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="40" selection-start="1069" selection-end="1069" vertical-scroll-proportion="-13.888889">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -97,23 +180,24 @@
     <option name="changedFiles">
       <list>
         <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/CustomGroupAdapter.java" />
-        <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/activities/GroupFragment.java" />
         <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/activities/PostResultActivity.java" />
-        <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/activities/StudentFragment.java" />
         <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/model/BCResult.java" />
         <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/GlobalVars.java" />
         <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/MainActivity.java" />
         <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/rest/BCConnect.java" />
         <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/activities/LoginActivity.java" />
+        <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/activities/StudentFragment.java" />
+        <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/activities/GroupFragment.java" />
+        <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/res/layout/news_articles.xml" />
         <option value="$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/AndroidManifest.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="22" />
-    <option name="width" value="1420" />
-    <option name="height" value="811" />
+    <option name="x" value="-230" />
+    <option name="y" value="-1178" />
+    <option name="width" value="1910" />
+    <option name="height" value="1118" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -161,126 +245,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BrightcenterSDK-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BrightcenterSDK-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androidsdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BrightcenterSDK-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BrightcenterSDK-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androidsdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BrightcenterSDK-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BrightcenterSDK-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androidsdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BrightcenterSDK-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BrightcenterSDK-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androidsdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enums" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BrightcenterSDK-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BrightcenterSDK-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androidsdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BrightcenterSDK-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BrightcenterSDK-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -294,6 +258,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/Projects" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
@@ -411,34 +376,37 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="22" width="1420" height="811" extended-state="0" />
-    <editor active="true" />
+    <frame x="-230" y="-1178" width="1910" height="1118" extended-state="0" />
+    <editor active="false" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18401287" sideWeight="0.7715431" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24302575" sideWeight="0.7715431" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22845691" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -504,23 +472,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/model/BCStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/GlobalVars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="16" selection-start="598" selection-end="598" vertical-scroll-proportion="0.4906542">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#495#504#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/CustomStudentAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="13" selection-start="334" selection-end="334" vertical-scroll-proportion="0.3504673">
@@ -571,16 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/activities/GroupFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="484" selection-end="484" vertical-scroll-proportion="0.41411042">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#562#571#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/rest/BCConnect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="22" selection-start="3823" selection-end="3823" vertical-scroll-proportion="2.1395705">
@@ -595,10 +536,10 @@
     </entry>
     <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/activities/StudentFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="632" selection-end="632" vertical-scroll-proportion="-0.19548872">
+        <state line="42" column="64" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.23076923">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#734#743#0" expanded="true" />
+            <element signature="e#779#788#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -614,16 +555,63 @@
     </entry>
     <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/activities/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
+        <state line="22" column="13" selection-start="686" selection-end="686" vertical-scroll-proportion="0.42383108">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/res/layout/article_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/src/nl/trifork/brightcenter/androidsdk/activities/GroupFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#607#616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/res/layout/fragment_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/res/layout/news_articles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="40" selection-start="1069" selection-end="1069" vertical-scroll-proportion="-13.888889">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Documents/Projects/BrightcenterSDK-Android/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="102" selection-start="847" selection-end="847" vertical-scroll-proportion="0.3167421">
+        <state line="5" column="19" selection-start="253" selection-end="253" vertical-scroll-proportion="0.10107817">
           <folding />
         </state>
       </provider>
