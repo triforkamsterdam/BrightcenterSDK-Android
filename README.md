@@ -4,7 +4,7 @@ BrightcenterSDK-Android
 In this repo you'll find the PHP-SDK for Brightcenter. In this file I'll describe how you can use the SDK.
 
 ###Download the project
-First of all you need to download the project. You can either check it out with git or download the zip. The downloaded folder will actually consist of 2 projects; BrightcenterSDK-Android and ActionBarSherlock.
+First of all you need to download the project. You can either check it out with git or download the zip. The downloaded folder will actually consist 2 projects; BrightcenterSDK-Android and ActionBarSherlock.
 
 ###Use the SDK in your project
 To include the Brightcenter SDK in your app you need to follow the following steps.
