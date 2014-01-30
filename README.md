@@ -9,9 +9,9 @@ First of all you need to download the project. You can either check it out with 
 ###Use the SDK in your project
 To include the Brightcenter SDK in your app you need to follow the following steps.
 
-1. include the BrightcenterSDK-Android project as a module in your project.
-2. include the ActionBarSherlock project as a module in your project.
-3. In your project add an dependency on both BrightcenterSDK-Android and ActionBarSherlock
+1. include the `BrightcenterSDK-Android` project as a module in your project.
+2. include the `ActionBarSherlock` project as a module in your project.
+3. In your project add an dependency on both `BrightcenterSDK-Android` and `ActionBarSherlock`
 4. Add the android-support-v4.jar to your classpath. (The jar can be found in the 'actionbarsherlock/libs' folder.
 
 To start the Brightcenter SDK use the following piece of code wherever you want to start the login sequence:
@@ -20,3 +20,51 @@ Intent intent = new Intent(this, LoginActivity.class);
 startActivity(intent);
 ```
 You be guided to the login screen where a teacher can fill in his/her credentials.
+
+To use the picked student you can put your code in the `StudentFragment` class in the `onListItemClick` method. It should look something like this:
+```java
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        if(position != 0){
+            vars.setSelectedStudent(selectedGroup.getBCStudents().get(position - 1));
+            //place your own code below:
+            
+        }
+    }
+```
+
+###How to use the selected student
+In your code you can use the folowing code snippet to get the id of the student:
+```java
+GlobalVars vars = ((GlobalVars) getApplicationContext());
+String studentId = vars.getSelectedStudent().getStudentId();
+```
+
+###How to retrieve results of a student
+To retrieve results of a student you can use the following code:
+```java
+BCConnect connector = new BCConnect();
+List<BCResult> results = connector.getResultsOfStudent(String studentId, String assessmentId, String username, String password);
+```
+The username and password can be retrieved by using GlobalVars again:
+```java
+String username = vars.getUsername();
+String password = vars.getPassword();
+```
+
+###How to post a result of a student
+To post a result of a student the following code can be used:
+```java
+connector.postResultOfStudent(BCResult result, String username, String password)
+```
+BCResult should contain the following variables:
+`score` the score of the student
+`studentId` the id of the student
+`assessmentId` the id of the assessment
+`questionId` the id of the question
+`duration` the duration in seconds
+`CompletionStatus` a completionStatus enum
+
+
+
+
