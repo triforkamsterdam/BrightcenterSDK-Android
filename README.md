@@ -19,7 +19,7 @@ To start the Brightcenter SDK use the following piece of code wherever you want 
 Intent intent = new Intent(this, LoginActivity.class);
 startActivity(intent);
 ```
-You be guided to the login screen where a teacher can fill in his/her credentials.
+You'll be guided to the login screen where a teacher can fill in his/her credentials.
 
 To use the picked student you can put your code in the `StudentFragment` class in the `onListItemClick` method. It should look something like this:
 ```java
@@ -64,6 +64,11 @@ BCResult should contain the following variables:
 `questionId` the id of the question
 `duration` the duration in seconds
 `CompletionStatus` a completionStatus enum
+
+###Notes
+-when a student logs out all variables in GlobalVars are set to `null`
+-if you have problems using the sdk you can create an issue on github or with the jira issue tracker on tst-brightcenter.trifork.nl
+
 
 
 
