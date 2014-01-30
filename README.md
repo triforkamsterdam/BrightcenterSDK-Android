@@ -67,6 +67,7 @@ BCResult should contain the following variables:
 
 ###Notes
 -when a student logs out all variables in GlobalVars are set to `null`
+
 -if you have problems using the sdk you can create an issue on github or with the jira issue tracker on tst-brightcenter.trifork.nl
 
 
