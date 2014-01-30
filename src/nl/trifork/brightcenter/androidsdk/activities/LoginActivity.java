@@ -13,6 +13,7 @@ import nl.trifork.brightcenter.androidsdk.GlobalVars;
 import nl.trifork.brightcenter.androidsdk.MainActivity;
 import nl.trifork.brightcenter.androidsdk.R;
 import nl.trifork.brightcenter.androidsdk.model.BCGroup;
+import nl.trifork.brightcenter.androidsdk.model.BCUser;
 import nl.trifork.brightcenter.androidsdk.rest.BCConnect;
 
 import java.util.List;

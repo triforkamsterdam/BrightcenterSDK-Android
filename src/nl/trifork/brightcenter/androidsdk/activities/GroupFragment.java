@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ListView;
 import nl.trifork.brightcenter.androidsdk.CustomGroupAdapter;
 import nl.trifork.brightcenter.androidsdk.GlobalVars;
+import nl.trifork.brightcenter.androidsdk.R;
 import nl.trifork.brightcenter.androidsdk.model.BCGroup;
 
 
