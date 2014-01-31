@@ -7,15 +7,11 @@
               android:background="@drawable/custom_selector_group_background"
               android:paddingLeft="20dp">
 
-
-
     <TextView
             android:id="@+id/group_name"
             android:textColor="@drawable/custom_selector_group_text"
             android:layout_width="fill_parent"
             android:layout_height="55dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
             android:textSize="26dp"
             android:singleLine="true"
             android:ellipsize="marquee"

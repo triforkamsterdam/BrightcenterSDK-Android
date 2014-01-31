@@ -84,49 +84,7 @@ public class LoginActivity extends SherlockActivity {
         startActivity(intent);
     }
 
-
-    private class LoginTask extends AsyncTask<String, String, String> {
-
-        String username;
-        String password;
-
-        public LoginTask(String username, String password) {
-            this.username = username;
-            this.password = password;
-        }
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-
-        @Override
-        protected String doInBackground(String... strings) {
-            BCConnect connector = new BCConnect();
-
-            try {
-                List<BCGroup> groups = connector.getGroupsOfTeacher(username, password);
-                GlobalVars vars = ((GlobalVars) getApplicationContext());
-                vars.setGroups(groups);
-                vars.setUsername(username);
-                vars.setPassword(password);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(String nop) {
-            super.onPostExecute(nop);
-            spinning(false);
-            bLogin.setEnabled(true);
-            loadGroupSelectView();
-        }
-    }
-
-    private class GetUserTask extends AsyncTask<String, String, String> {
+    private class GetUserTask extends AsyncTask<String, String, BCUser> {
 
         String username;
         String password;
@@ -144,27 +102,32 @@ public class LoginActivity extends SherlockActivity {
         }
 
         @Override
-        protected String doInBackground(String... strings) {
+        protected BCUser doInBackground(String... strings) {
             BCConnect connector = new BCConnect();
-
+            BCUser user = null;
             try {
-                BCUser user = connector.getUser(username, password);
+                user = connector.getUser(username, password);
                 if (user.getId() != null) {
                     vars.setLoggedInUser(user);
+                    List<BCGroup> groups = connector.getGroupsOfTeacher(username, password);
+                    GlobalVars vars = ((GlobalVars) getApplicationContext());
+                    vars.setGroups(groups);
+                    vars.setUsername(username);
+                    vars.setPassword(password);
                 }
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
-            return null;
+            return user;
         }
 
         @Override
-        protected void onPostExecute(String nop) {
-            if (vars.getLoggedInUser() != null) {
-                new LoginTask(username, password).execute();
+        protected void onPostExecute(BCUser user) {
+            spinning(false);
+            bLogin.setEnabled(true);
+            if (user != null) {
+                loadGroupSelectView();
             } else {
-                spinning(false);
                 Context context = getApplicationContext();
                 CharSequence text = getResources().getText(R.string.login_toast_error);
                 int duration = Toast.LENGTH_LONG;
@@ -172,7 +135,6 @@ public class LoginActivity extends SherlockActivity {
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.setGravity(Gravity.BOTTOM, 0, 150);
                 toast.show();
-                bLogin.setEnabled(true);
             }
         }
     }

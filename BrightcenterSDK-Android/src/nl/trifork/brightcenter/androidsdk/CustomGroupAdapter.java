@@ -31,8 +31,7 @@ public class CustomGroupAdapter extends ArrayAdapter<String>{
     public View getView(int position, View convertView, ViewGroup parent) {
         View row = convertView;
 
-        if(row == null)
-        {
+        if(row == null) {
             LayoutInflater inflater = ((Activity)context).getLayoutInflater();
             row = inflater.inflate(resource, parent, false);
         }

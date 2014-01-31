@@ -30,12 +30,9 @@ public class CustomStudentAdapter extends ArrayAdapter<String> {
     public View getView(int position, View convertView, ViewGroup parent) {
         View row = convertView;
 
-        if(row == null)
-        {
-            LayoutInflater inflater = ((Activity)context).getLayoutInflater();
+        if (row == null) {
+            LayoutInflater inflater = ((Activity) context).getLayoutInflater();
             row = inflater.inflate(resource, parent, false);
-
-
         }
         String studentName = objects.get(position);
         TextView tvGroupId = (TextView) row.findViewById(R.id.tvStudenName);

@@ -1,15 +1,17 @@
 package nl.trifork.brightcenter.androidsdk.activities;
 
 
-import android.content.Intent;
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.Toast;
 import nl.trifork.brightcenter.androidsdk.CustomStudentAdapter;
 import nl.trifork.brightcenter.androidsdk.GlobalVars;
 import nl.trifork.brightcenter.androidsdk.R;
@@ -21,6 +23,7 @@ import java.util.List;
 
 /**
  * This class provides a custom adapter for the StudentFragment List
+ *
  * @author Rick Slot
  */
 public class StudentFragment extends ListFragment {
@@ -36,7 +39,7 @@ public class StudentFragment extends ListFragment {
         List<String> studentNames = new ArrayList<String>();
         vars = ((GlobalVars) getActivity().getApplicationContext());
         selectedGroup = vars.getSelectedGroup();
-        if(selectedGroup != null){
+        if (selectedGroup != null) {
             for (BCStudent student : selectedGroup.getBCStudents()) {
                 studentNames.add(student.getFirstName() + " " + student.getLastName());
             }
@@ -60,15 +63,21 @@ public class StudentFragment extends ListFragment {
     }
 
 
-
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
-        if(position != 0){
+        if (position != 0) {
             vars.setSelectedStudent(selectedGroup.getBCStudents().get(position - 1));
-            //replace code below with own code
-            Intent intent = new Intent(getActivity(), PostResultActivity.class);
-            startActivity(intent);
-            //replace code above with own code
+            if (vars.getIntent() != null) {
+                startActivity(vars.getIntent());
+            } else {
+                Context context = getActivity().getApplicationContext();
+                CharSequence text = "I don't know which activity to load. Check the readme!";
+                int duration = Toast.LENGTH_LONG;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.setGravity(Gravity.BOTTOM, 0, 150);
+                toast.show();
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 package nl.trifork.brightcenter.androidsdk;
 
 import android.app.Application;
+import android.content.Intent;
 import nl.trifork.brightcenter.androidsdk.model.BCGroup;
 import nl.trifork.brightcenter.androidsdk.model.BCStudent;
 import nl.trifork.brightcenter.androidsdk.model.BCUser;
@@ -21,6 +22,7 @@ public class GlobalVars extends Application {
     private BCGroup selectedGroup;
     private BCStudent selectedStudent;
     private BCUser loggedInUser;
+    private Intent intent = null;
 
     public void resetVars(){
         username = "";
@@ -77,5 +79,13 @@ public class GlobalVars extends Application {
 
     public void setLoggedInUser(BCUser loggedInUser) {
         this.loggedInUser = loggedInUser;
+    }
+
+    public Intent getIntent() {
+        return intent;
+    }
+
+    public void setIntentForStudentSelected(Intent intent) {
+        this.intent = intent;
     }
 }

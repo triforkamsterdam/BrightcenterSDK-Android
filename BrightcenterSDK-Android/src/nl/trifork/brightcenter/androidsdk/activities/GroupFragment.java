@@ -10,12 +10,12 @@ import nl.trifork.brightcenter.androidsdk.GlobalVars;
 import nl.trifork.brightcenter.androidsdk.R;
 import nl.trifork.brightcenter.androidsdk.model.BCGroup;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * This class provides a custom adapter for the GroupFragment ListVew
+ *
  * @author Rick Slot
  */
 public class GroupFragment extends ListFragment {
@@ -39,7 +39,7 @@ public class GroupFragment extends ListFragment {
         customGroupAdapter = new CustomGroupAdapter(getActivity(), R.layout.custom_group_row, list);
 
         StudentFragment studentFragment = new StudentFragment();
-        getFragmentManager().beginTransaction().add(R.id.article_fragment, studentFragment).commit();
+        getFragmentManager().beginTransaction().add(R.id.student_fragment, studentFragment).commit();
 
     }
 
@@ -62,7 +62,7 @@ public class GroupFragment extends ListFragment {
         if (position != 0) {
             StudentFragment studentFragment = new StudentFragment();
             vars.setSelectedGroup(groups.get(position - 1));
-            getFragmentManager().beginTransaction().remove(getFragmentManager().findFragmentById(R.id.article_fragment)).add(R.id.article_fragment, studentFragment).commit();
+            getFragmentManager().beginTransaction().remove(getFragmentManager().findFragmentById(R.id.student_fragment)).add(R.id.student_fragment, studentFragment).commit();
         }
     }
 }

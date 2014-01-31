@@ -1,18 +1,4 @@
-/*
- * Copyright (C) 2012 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 package nl.trifork.brightcenter.androidsdk.activities;
 
 import android.os.Bundle;
@@ -24,9 +10,10 @@ import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import nl.trifork.brightcenter.androidsdk.GlobalVars;
 import nl.trifork.brightcenter.androidsdk.R;
-import nl.trifork.brightcenter.androidsdk.activities.GroupFragment;
 
-
+/**
+ * @author Rick Slot
+ */
 public class MainActivity extends SherlockFragmentActivity {
 
     GlobalVars vars;
@@ -45,27 +32,15 @@ public class MainActivity extends SherlockFragmentActivity {
         TextView tvUsernameTitleBar = (TextView) findViewById(R.id.tvUsernameTitlebar);
         tvUsernameTitleBar.setText(vars.getUsername());
 
-        setContentView(R.layout.news_articles);
+        setContentView(R.layout.main_view);
 
-
-
-        // Check whether the activity is using the layout version with
-        // the fragment_container FrameLayout. If so, we must add the first fragment
-        if (findViewById(R.id.headlines_fragment) != null) {
-
-            // However, if we're being restored from a previous state,
-            // then we don't need to do anything and should return or else
-            // we could end up with overlapping fragments.
+        if (findViewById(R.id.group_fragment) != null) {
             if (savedInstanceState != null) {
                 return;
             }
 
-            // Create an instance of ExampleFragment
             GroupFragment groupFragment = new GroupFragment();
-
-            // Add the fragment to the 'fragment_container' FrameLayout
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.headlines_fragment, groupFragment).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.group_fragment, groupFragment).commit();
         }
     }
 
