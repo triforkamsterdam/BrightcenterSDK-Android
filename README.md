@@ -14,7 +14,7 @@ To include the Brightcenter SDK in your app you need to follow the following ste
 3. In your project add an dependency on both `BrightcenterSDK-Android` and `ActionBarSherlock`
 4. Add the android-support-v4.jar to your classpath. (The jar can be found in the 'actionbarsherlock/libs' folder.
 
-You alsno need to add the following thins to your AndroidManifest.xml:
+You alsno need to add the following things to your AndroidManifest.xml:
 ```xml
 <activity android:name="nl.trifork.brightcenter.androidsdk.activities.LoginActivity" android:theme="@android:style/Theme.Holo.Light"/>
 
