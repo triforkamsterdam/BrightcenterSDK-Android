@@ -14,11 +14,11 @@ To include the Brightcenter SDK in your app you need to follow the following ste
 3. In your project add an dependency on both `BrightcenterSDK-Android` and `ActionBarSherlock`
 4. Add the android-support-v4.jar to your classpath. (The jar can be found in the 'actionbarsherlock/libs' folder.
 
-You alsno need to add the following thins to your AndroidManifest.xml:
+You alsno need to add the following things to your AndroidManifest.xml:
 ```xml
 <activity android:name="nl.trifork.brightcenter.androidsdk.activities.LoginActivity" android:theme="@android:style/Theme.Holo.Light"/>
 
-<activity android:name="nl.trifork.brightcenter.androidsdk.MainActivity" android:theme="@android:style/Theme.Holo.Light"/>
+<activity android:name="nl.trifork.brightcenter.androidsdk.activities.MainActivity" android:theme="@android:style/Theme.Holo.Light"/>
 
 <activity android:name="nl.trifork.brightcenter.androidsdk.activities.PostResultActivity" android:theme="@android:style/Theme”/>
 
@@ -81,7 +81,9 @@ BCResult should contain the following variables:
 `CompletionStatus` a completionStatus enum
 
 ###Notes
--when a student logs out all variables in GlobalVars are set to `null`
+-when a student logs out all variables in GlobalVars are set to `null`.
+
+-All BCConnect tasks should be put in a asynchronous task if you want to use them yourself, this is not recommended.
 
 -if you have problems using the sdk you can create an issue on github or with the jira issue tracker on tst-brightcenter.trifork.nl
 
