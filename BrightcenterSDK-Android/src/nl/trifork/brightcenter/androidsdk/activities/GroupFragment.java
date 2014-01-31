@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * This class provides a custom adapter for the GroupFragment ListVew
  * @author Rick Slot
  */
 public class GroupFragment extends ListFragment {

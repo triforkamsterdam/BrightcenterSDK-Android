@@ -1,6 +1,5 @@
 package nl.trifork.brightcenter.androidsdk.rest;
 
-import android.util.Log;
 import nl.trifork.brightcenter.androidsdk.enums.CompletionStatus;
 import nl.trifork.brightcenter.androidsdk.model.BCGroup;
 import nl.trifork.brightcenter.androidsdk.model.BCResult;
@@ -15,12 +14,10 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.auth.BasicScheme;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Date;
@@ -31,19 +28,22 @@ import java.util.List;
  */
 public class BCConnect {
 
-    //String URL = "http://10.0.2.2:8080/api/";
     String URL = "https://tst-brightcenter.trifork.nl/api/";
 
+    /**
+     * This method is used to 'login' and gets the user from the server
+     * @param username the username of the teacher that wants to login
+     * @param password the password of the teacher that wants to login
+     * @return the user that is logged in
+     * @throws Exception
+     */
     public BCUser getUser(String username, String password) throws Exception {
         HttpClient httpClient = new DefaultHttpClient();
         HttpGet get = new HttpGet(URL + "userDetails");
         get.setHeader(BasicScheme.authenticate(
                 new UsernamePasswordCredentials(username, password),
                 "UTF-8", false));
-        Log.d("BRIGHTCENTER", "calling...");
         HttpResponse httpResponse = httpClient.execute(get);
-        Log.d("BRIGHTCENTER", "call is made1!");
-
         BufferedReader reader = new BufferedReader(new InputStreamReader(httpResponse.getEntity().getContent(), "UTF-8"));
         StringBuilder builder = new StringBuilder();
         for (String line = null; (line = reader.readLine()) != null; ) {
@@ -59,19 +59,21 @@ public class BCConnect {
     }
 
 
-
-
-
-    public List<BCGroup> login(String username, String password) throws IOException, JSONException {
+    /**
+     * Gets the groups of a teacher
+     * @param username the username of the loggedin teacher
+     * @param password the password of the logged in teacher
+     * @return
+     * @throws Exception
+     */
+    public List<BCGroup> getGroupsOFTeacher(String username, String password) throws Exception {
 
         HttpClient httpClient = new DefaultHttpClient();
         HttpGet get = new HttpGet(URL + "groups");
         get.setHeader(BasicScheme.authenticate(
                 new UsernamePasswordCredentials(username, password),
                 "UTF-8", false));
-        Log.d("BRIGHTCENTER", "calling...");
         HttpResponse httpResponse = httpClient.execute(get);
-        Log.d("BRIGHTCENTER", "call is made1!");
         BufferedReader reader = new BufferedReader(new InputStreamReader(httpResponse.getEntity().getContent(), "UTF-8"));
         StringBuilder builder = new StringBuilder();
         for (String line = null; (line = reader.readLine()) != null; ) {
@@ -106,6 +108,15 @@ public class BCConnect {
         return groups;
     }
 
+    /**
+     * Gives you a list of all the results that a student scored on the given assessment
+     * @param studentId the id of the student
+     * @param assessmentId the id of the assessment
+     * @param username the username of the logged in teacher
+     * @param password the password of the logged in teacher
+     * @return a list of results
+     * @throws Exception
+     */
     public List<BCResult> getResultsOfStudent(String studentId, String assessmentId, String username, String password) throws Exception {
         HttpClient httpClient = new DefaultHttpClient();
 
@@ -129,7 +140,6 @@ public class BCConnect {
             BCResult result = new BCResult();
             JSONObject resultJson = finalResult.getJSONObject(i);
 
-
             result.setStudentId(studentId);
             result.setAssessmentId(assessmentId);
             result.setScore(resultJson.getDouble("score"));
@@ -149,6 +159,13 @@ public class BCConnect {
         return results;
     }
 
+    /**
+     * Posts a result of a student to the server
+     * @param result the result of the student
+     * @param username the username of the logged in teacher
+     * @param password the password of the logged in teacher
+     * @throws Exception
+     */
     public void postResultOfStudent(BCResult result, String username, String password) throws Exception {
         HttpClient httpClient = new DefaultHttpClient();
         String studentId = result.getStudentId();
@@ -157,7 +174,6 @@ public class BCConnect {
         Double score = result.getScore();
         int duration = result.getDuration();
         CompletionStatus completionStatus = result.getCompletionStatus();
-
 
         String postString = "assessment/" + assessmentId + "/student/" + studentId + "/assessmentItemResult/" + questionId;
         HttpPut post = new HttpPut(URL + postString);
@@ -174,8 +190,6 @@ public class BCConnect {
         post.setEntity(new StringEntity(resultObject.toString()));
 
         HttpResponse response = httpClient.execute(post);
-
-        Log.d("BRIGHTCENTER", response.toString());
     }
 
 }

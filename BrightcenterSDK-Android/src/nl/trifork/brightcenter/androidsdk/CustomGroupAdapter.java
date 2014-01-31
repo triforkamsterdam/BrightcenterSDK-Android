@@ -11,6 +11,7 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
+ * This class provides a custom adapter for the GroupFragment List
  * @author Rick Slot
  */
 public class CustomGroupAdapter extends ArrayAdapter<String>{

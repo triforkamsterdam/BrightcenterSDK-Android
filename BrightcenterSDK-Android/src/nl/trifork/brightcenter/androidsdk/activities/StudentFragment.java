@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * This class provides a custom adapter for the StudentFragment List
  * @author Rick Slot
  */
 public class StudentFragment extends ListFragment {
@@ -64,8 +65,10 @@ public class StudentFragment extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id) {
         if(position != 0){
             vars.setSelectedStudent(selectedGroup.getBCStudents().get(position - 1));
+            //replace code below with own code
             Intent intent = new Intent(getActivity(), PostResultActivity.class);
             startActivity(intent);
+            //replace code above with own code
         }
     }
 }

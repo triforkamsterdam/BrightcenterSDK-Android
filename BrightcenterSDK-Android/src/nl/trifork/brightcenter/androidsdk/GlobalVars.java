@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * This class is used to save some global variables
  * @author Rick Slot
  */
 public class GlobalVars extends Application {
