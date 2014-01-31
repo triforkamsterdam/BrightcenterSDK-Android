@@ -10,12 +10,11 @@ import nl.trifork.brightcenter.androidsdk.GlobalVars;
 import nl.trifork.brightcenter.androidsdk.R;
 import nl.trifork.brightcenter.androidsdk.model.BCGroup;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This class provides a custom adapter for the GroupFragment ListVew
- *
  * @author Rick Slot
  */
 public class GroupFragment extends ListFragment {
@@ -55,6 +54,9 @@ public class GroupFragment extends ListFragment {
         View headerView = View.inflate(getActivity(), R.layout.custom_group_header, null);
         getListView().addHeaderView(headerView, null, false);
         setListAdapter(customGroupAdapter);
+        getListView().getAdapter().getView(1, null, null).performClick();
+        getListView().setItemChecked(1, true);
+        vars.setSelectedGroup(vars.getGroups().get(0));
     }
 
     @Override

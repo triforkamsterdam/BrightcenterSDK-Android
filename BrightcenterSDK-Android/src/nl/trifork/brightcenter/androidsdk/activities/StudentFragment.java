@@ -22,8 +22,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This class provides a custom adapter for the StudentFragment List
- *
  * @author Rick Slot
  */
 public class StudentFragment extends ListFragment {
