@@ -66,7 +66,7 @@ public class BCConnect {
      * @return
      * @throws Exception
      */
-    public List<BCGroup> getGroupsOFTeacher(String username, String password) throws Exception {
+    public List<BCGroup> getGroupsOfTeacher(String username, String password) throws Exception {
 
         HttpClient httpClient = new DefaultHttpClient();
         HttpGet get = new HttpGet(URL + "groups");

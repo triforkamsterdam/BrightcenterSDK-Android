@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package nl.trifork.brightcenter.androidsdk;
+package nl.trifork.brightcenter.androidsdk.activities;
 
 import android.os.Bundle;
 import android.widget.TextView;
@@ -22,6 +22,8 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+import nl.trifork.brightcenter.androidsdk.GlobalVars;
+import nl.trifork.brightcenter.androidsdk.R;
 import nl.trifork.brightcenter.androidsdk.activities.GroupFragment;
 
 

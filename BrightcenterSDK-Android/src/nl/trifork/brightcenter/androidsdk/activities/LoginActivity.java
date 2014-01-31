@@ -10,7 +10,6 @@ import android.widget.*;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 import nl.trifork.brightcenter.androidsdk.GlobalVars;
-import nl.trifork.brightcenter.androidsdk.MainActivity;
 import nl.trifork.brightcenter.androidsdk.R;
 import nl.trifork.brightcenter.androidsdk.model.BCGroup;
 import nl.trifork.brightcenter.androidsdk.model.BCUser;
@@ -106,7 +105,7 @@ public class LoginActivity extends SherlockActivity {
             BCConnect connector = new BCConnect();
 
             try {
-                List<BCGroup> groups = connector.login(username, password);
+                List<BCGroup> groups = connector.getGroupsOfTeacher(username, password);
                 GlobalVars vars = ((GlobalVars) getApplicationContext());
                 vars.setGroups(groups);
                 vars.setUsername(username);
