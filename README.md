@@ -31,22 +31,12 @@ android:name="nl.trifork.brightcenter.androidsdk.GlobalVars"
 
 To start the Brightcenter SDK use the following piece of code wherever you want to start the login sequence:
 ```java
-Intent intent = new Intent(this, LoginActivity.class);
-startActivity(intent);
+    GlobalVars vars = (GlobalVars) getApplication();
+    vars.setIntentForStudentSelected(new Intent(this, THE_ACTIVITY_YOU_WANT_TO_START.class));
+    Intent intent = new Intent(this, LoginActivity.class);
+    startActivity(intent);
 ```
-You'll be guided to the login screen where a teacher can fill in his/her credentials.
-
-To use the picked student you can put your code in the `StudentFragment` class in the `onListItemClick` method. It should look something like this:
-```java
-    @Override
-    public void onListItemClick(ListView l, View v, int position, long id) {
-        if(position != 0){
-            vars.setSelectedStudent(selectedGroup.getBCStudents().get(position - 1));
-            //place your own code below:
-            
-        }
-    }
-```
+You'll be guided to the login screen where a teacher can fill in his/her credentials. When a student is picked the Intent that you gave will be started
 
 ###How to use the selected student
 In your code you can use the folowing code snippet to get the id of the student:
@@ -83,7 +73,7 @@ BCResult should contain the following variables:
 ###Notes
 -when a student logs out all variables in GlobalVars are set to `null`.
 
--All BCConnect tasks should be put in a asynchronous task if you want to use them yourself, this is not recommended.
+-All BCConnect tasks should be put in a asynchronous task if you use them.
 
 -if you have problems using the sdk you can create an issue on github or with the jira issue tracker on tst-brightcenter.trifork.nl
 
