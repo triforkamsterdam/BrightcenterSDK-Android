@@ -10,7 +10,6 @@ import nl.trifork.brightcenter.androidsdk.GlobalVars;
 import nl.trifork.brightcenter.androidsdk.R;
 import nl.trifork.brightcenter.androidsdk.model.BCGroup;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,7 +55,10 @@ public class GroupFragment extends ListFragment {
         setListAdapter(customGroupAdapter);
         getListView().getAdapter().getView(1, null, null).performClick();
         getListView().setItemChecked(1, true);
-        vars.setSelectedGroup(vars.getGroups().get(0));
+
+        if (vars.getGroups().size() > 0) {
+            vars.setSelectedGroup(vars.getGroups().get(0));
+        }
     }
 
     @Override
