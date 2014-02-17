@@ -22,7 +22,7 @@ You alsno need to add the following things to your AndroidManifest.xml:
 
 <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 ```
-add the folowing to your '<application>' tag to use the globalvars:
+add the folowing to your `<application>` tag to use the globalvars:
 ```xml
 android:name="nl.trifork.brightcenter.androidsdk.GlobalVars"
 ```
