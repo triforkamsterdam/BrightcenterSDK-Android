@@ -75,7 +75,7 @@ BCResult should contain the following variables:
 
 -All BCConnect tasks should be put in a asynchronous task if you use them.
 
--if you have problems using the sdk you can create an issue on github or with the jira issue tracker on tst-brightcenter.trifork.nl
+-if you have problems using the sdk you can create an issue on github or with the jira issue tracker on tst-brightcenter.trifork.nl 
 
 
 
