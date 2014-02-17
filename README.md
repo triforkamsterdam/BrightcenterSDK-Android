@@ -77,19 +77,19 @@ in your activity onCreate() you can put to following line to activate the button
 
 ```java
 RelativeLayout layout = (RelativeLayout) findViewById([IDOFYOURLAYOUT]);
-        createBrightcenterButton(layout, [POSITION], [COLOR]);
+createBrightcenterButton(layout, [POSITION], [COLOR]);
 ```
 position can be 1, 2, 3 or 4. 1 is top left, 2 is top right, 3 is bottom left and 4 is bottom right. color can be 1, 2 or 3. 1 is orange, 2 is blue and 3 is gray.
 
 You should also create a intent that will be loaded after the login sequence, like this:
 ```java
 Intent intentToLoad = new Intent(this, ACTIVITYTOLOADAFTERSEQUENCE.class);
-        GlobalVars vars = (GlobalVars) getApplication();
-        vars.setIntentForStudentSelected(intentToLoad);
+GlobalVars vars = (GlobalVars) getApplication();
+vars.setIntentForStudentSelected(intentToLoad);
 ```
 If you've done this correctly, you should have a nice button in one of your screen's corners!
 
-###If you don't the brightcenter button
+###If you don't want to use the brightcenter button
 
 
 To start the Brightcenter SDK use the following piece of code wherever you want to start the login sequence:
