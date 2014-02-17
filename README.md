@@ -46,98 +46,28 @@ public void createBrightcenterButton(RelativeLayout layout, int position, int co
         });
 
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        switch (position) {
+        OverlayButton overlayButton = new OverlayButton();
+        button = overlayButton.setParams(button, position, color, getResources());
+        switch (position){
             case 1:
                 params.addRule(RelativeLayout.ALIGN_PARENT_TOP);
                 params.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
-                switch(color){
-                    case 1:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_orange_top_left));
-                        break;
-                    case 2:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_blue_top_left));
-                        break;
-                    case 3:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_gray_top_left));
-                        break;
-                    default:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_orange_top_left));
-                        break;
-
-                }
                 break;
             case 2:
                 params.addRule(RelativeLayout.ALIGN_PARENT_TOP);
                 params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-                switch(color){
-                    case 1:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_orange_top_right));
-                        break;
-                    case 2:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_blue_top_right));
-                        break;
-                    case 3:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_gray_top_right));
-                        break;
-                    default:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_orange_top_right));
-                        break;
-                }
                 break;
             case 3:
                 params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
                 params.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
-                switch(color){
-                    case 1:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_orange_bottom_left));
-                        break;
-                    case 2:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_blue_bottom_left));
-                        break;
-                    case 3:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_gray_bottom_left));
-                        break;
-                    default:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_orange_bottom_left));
-                        break;
-                }
                 break;
             case 4:
                 params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
                 params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-
-                switch(color){
-                    case 1:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_orange_bottom_right));
-                        break;
-                    case 2:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_blue_bottom_right));
-                        break;
-                    case 3:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_gray_bottom_right));
-                        break;
-                    default:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_orange_bottom_right));
-                        break;
-                }
                 break;
             default:
                 params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
                 params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-                switch(color){
-                    case 1:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_orange_bottom_right));
-                        break;
-                    case 2:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_blue_bottom_right));
-                        break;
-                    case 3:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_gray_bottom_right));
-                        break;
-                    default:
-                        button.setBackground(getResources().getDrawable(R.drawable.overlay_button_background_orange_bottom_right));
-                        break;
-                }
                 break;
         }
         layout.addView(button, params);
