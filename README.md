@@ -29,6 +29,69 @@ add the folowing to your '<application>' tag to use the globalvars:
 android:name="nl.trifork.brightcenter.androidsdk.GlobalVars"
 ```
 
+###Use the cool overlay button
+if you want to use the brightcenter overlay button to start the login sequence you need to add the following code to the activity where you want to start it:
+
+```java
+public void createBrightcenterButton(RelativeLayout layout, int position, int color) {
+        Button button = new Button(this);
+
+        button.setLayoutParams(new ViewGroup.MarginLayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getBaseContext(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        OverlayButton overlayButton = new OverlayButton();
+        button = overlayButton.setParams(button, position, color, getResources());
+        switch (position){
+            case 1:
+                params.addRule(RelativeLayout.ALIGN_PARENT_TOP);
+                params.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
+                break;
+            case 2:
+                params.addRule(RelativeLayout.ALIGN_PARENT_TOP);
+                params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+                break;
+            case 3:
+                params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+                params.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
+                break;
+            case 4:
+                params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+                params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+                break;
+            default:
+                params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+                params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+                break;
+        }
+        layout.addView(button, params);
+    }
+```
+in your activity onCreate() you can put to following line to activate the button:
+
+```java
+RelativeLayout layout = (RelativeLayout) findViewById([IDOFYOURLAYOUT]);
+        createBrightcenterButton(layout, [POSITION], [COLOR]);
+```
+position can be 1, 2, 3 or 4. 1 is top left, 2 is top right, 3 is bottom left and 4 is bottom right. color can be 1, 2 or 3. 1 is orange, 2 is blue and 3 is gray.
+
+You should also create a intent that will be loaded after the login sequence, like this:
+```java
+Intent intentToLoad = new Intent(this, ACTIVITYTOLOADAFTERSEQUENCE.class);
+        GlobalVars vars = (GlobalVars) getApplication();
+        vars.setIntentForStudentSelected(intentToLoad);
+```
+If you've done this correctly, you should have a nice button in one of your screen's corners!
+
+###If you don't the brightcenter button
+
+
 To start the Brightcenter SDK use the following piece of code wherever you want to start the login sequence:
 ```java
     GlobalVars vars = (GlobalVars) getApplication();
