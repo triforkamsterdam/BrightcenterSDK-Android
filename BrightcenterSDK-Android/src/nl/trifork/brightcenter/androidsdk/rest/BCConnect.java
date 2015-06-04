@@ -28,7 +28,7 @@ import java.util.List;
  */
 public class BCConnect {
 
-    String URL = "http://www.brightcenter.nl/dashboard/api/";
+    String URL = "https://www.brightcenter.nl/dashboard/api/";
 
     /**
      * This method is used to 'login' and gets the user from the server
